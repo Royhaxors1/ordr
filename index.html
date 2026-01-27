@@ -33,7 +33,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
+        }
+        .feature-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: #667eea;
         }
     </style>
 </head>
@@ -43,12 +47,14 @@
     <nav class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
-                <span class="text-2xl">🧁</span>
+                <div class="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
+                    <span class="text-white font-bold text-sm">O</span>
+                </div>
                 <span class="font-bold text-xl">Ordr</span>
             </div>
             <div class="hidden md:flex gap-8 text-sm text-gray-600">
-                <a href="#pain-points" class="hover:text-gray-900">Why Ordr</a>
                 <a href="#features" class="hover:text-gray-900">Features</a>
+                <a href="#how-it-works" class="hover:text-gray-900">How it works</a>
                 <a href="#pricing" class="hover:text-gray-900">Pricing</a>
                 <a href="#faq" class="hover:text-gray-900">FAQ</a>
             </div>
@@ -64,29 +70,29 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <div class="inline-block bg-purple-100 text-purple-700 px-4 py-1 rounded-full text-sm font-medium mb-6">
-                        🎉 Made for home bakers & food sellers
+                        Built for home food businesses
                     </div>
                     <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                        Stop losing orders in your <span class="gradient-text">DMs</span>
+                        Your orders.<br><span class="gradient-text">Finally organized.</span>
                     </h1>
                     <p class="text-xl text-gray-600 mb-8">
-                        Ordr is your Telegram assistant that tracks orders, payments, and customers — so you can focus on baking, not bookkeeping.
+                        Ordr is your Telegram assistant that tracks orders, payments, and customers — so you can focus on your craft, not bookkeeping.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="#cta" class="gradient-bg text-white px-8 py-4 rounded-full text-center font-semibold hover:opacity-90 transition">
-                            Start Free Trial →
+                            Try free for 14 days
                         </a>
-                        <a href="#demo" class="border border-gray-300 text-gray-700 px-8 py-4 rounded-full text-center font-semibold hover:bg-gray-50 transition">
-                            See Demo
+                        <a href="#how-it-works" class="border border-gray-300 text-gray-700 px-8 py-4 rounded-full text-center font-semibold hover:bg-gray-50 transition">
+                            See how it works
                         </a>
                     </div>
-                    <p class="text-sm text-gray-500 mt-4">No credit card required · 14-day free trial</p>
+                    <p class="text-sm text-gray-500 mt-4">No credit card required</p>
                 </div>
                 
                 <!-- Chat Demo -->
                 <div class="bg-gray-50 rounded-3xl p-6 shadow-xl">
                     <div class="flex items-center gap-3 mb-6 pb-4 border-b border-gray-200">
-                        <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white">🧁</div>
+                        <div class="w-10 h-10 rounded-full gradient-bg flex items-center justify-center text-white font-bold">O</div>
                         <div>
                             <div class="font-semibold">Ordr Bot</div>
                             <div class="text-xs text-green-500">● Online</div>
@@ -97,22 +103,22 @@
                             Order from @jessica: 2 burnt cheesecake, pickup Sat 3pm, she paid $80
                         </div>
                         <div class="chat-bubble chat-bubble-bot">
-                            ✅ Order #23 saved!<br><br>
-                            📦 2x Burnt Cheesecake<br>
-                            👤 @jessica<br>
-                            📅 Sat 3pm pickup<br>
-                            💰 $80 PAID<br><br>
-                            <span class="opacity-80">Saturday total: 5 orders, $340</span>
+                            ✓ Order #23 saved<br><br>
+                            2x Burnt Cheesecake<br>
+                            @jessica<br>
+                            Sat 3pm pickup<br>
+                            $80 — PAID<br><br>
+                            <span class="opacity-80">Saturday: 5 orders, $340 total</span>
                         </div>
                         <div class="chat-bubble">
                             What's unpaid this week?
                         </div>
                         <div class="chat-bubble chat-bubble-bot">
-                            💰 3 unpaid orders:<br><br>
+                            3 unpaid orders this week:<br><br>
                             • @sarah — $45 (Fri)<br>
                             • @mike — $35 (Sat)<br>
                             • @ben — $60 (Sat)<br><br>
-                            <span class="opacity-80">Total owing: $140</span>
+                            <span class="opacity-80">Total outstanding: $140</span>
                         </div>
                     </div>
                 </div>
@@ -123,12 +129,8 @@
     <!-- Social Proof -->
     <section class="py-12 bg-gray-50 border-y border-gray-100">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex flex-wrap justify-center items-center gap-8 text-gray-400 text-sm">
-                <span>Trusted by <strong class="text-gray-900">500+</strong> home bakers</span>
-                <span>•</span>
-                <span><strong class="text-gray-900">50,000+</strong> orders tracked</span>
-                <span>•</span>
-                <span><strong class="text-gray-900">$2M+</strong> in sales managed</span>
+            <div class="flex flex-wrap justify-center items-center gap-6 text-gray-600 text-sm">
+                <span>Join home bakers and food sellers who've simplified their order tracking</span>
             </div>
         </div>
     </section>
@@ -138,7 +140,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                    Sound familiar? 😩
+                    Sound familiar?
                 </h2>
                 <p class="text-xl text-gray-600">
                     Running a home food business is hard enough without these headaches
@@ -146,41 +148,34 @@
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Pain Point Cards -->
                 <div class="pain-card bg-red-50 border border-red-100 rounded-2xl p-6 transition-transform">
-                    <div class="text-3xl mb-4">😵‍💫</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">Orders everywhere</h3>
-                    <p class="text-gray-600 text-sm">Instagram DMs, WhatsApp, Telegram... you spend 30 mins just finding who ordered what.</p>
+                    <h3 class="font-semibold text-gray-900 mb-2">Orders scattered everywhere</h3>
+                    <p class="text-gray-600 text-sm">Instagram DMs, WhatsApp, Telegram... you spend 30 minutes just finding who ordered what.</p>
                 </div>
                 
                 <div class="pain-card bg-orange-50 border border-orange-100 rounded-2xl p-6 transition-transform">
-                    <div class="text-3xl mb-4">💸</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">"Did they pay?"</h3>
-                    <p class="text-gray-600 text-sm">Customer says they transferred. You check PayNow. Nothing. Or was it last week's payment? Chaos.</p>
+                    <h3 class="font-semibold text-gray-900 mb-2">"Wait, did they pay?"</h3>
+                    <p class="text-gray-600 text-sm">Customer says they transferred. You check PayNow. Nothing. Or was it last week's payment? Pure chaos.</p>
                 </div>
                 
                 <div class="pain-card bg-yellow-50 border border-yellow-100 rounded-2xl p-6 transition-transform">
-                    <div class="text-3xl mb-4">📅</div>
                     <h3 class="font-semibold text-gray-900 mb-2">Overbooked weekends</h3>
                     <p class="text-gray-600 text-sm">Accepted 15 orders for Saturday. Now you're baking until 3am. Again.</p>
                 </div>
                 
                 <div class="pain-card bg-green-50 border border-green-100 rounded-2xl p-6 transition-transform">
-                    <div class="text-3xl mb-4">👻</div>
                     <h3 class="font-semibold text-gray-900 mb-2">Forgotten orders</h3>
-                    <p class="text-gray-600 text-sm">"Hi, I'm here to pick up?" Oh no. You scroll frantically through 200 messages...</p>
+                    <p class="text-gray-600 text-sm">"Hi, I'm here to pick up?" Oh no. You scroll frantically through 200 messages looking for their order.</p>
                 </div>
                 
                 <div class="pain-card bg-blue-50 border border-blue-100 rounded-2xl p-6 transition-transform">
-                    <div class="text-3xl mb-4">🤷‍♀️</div>
                     <h3 class="font-semibold text-gray-900 mb-2">"Am I even making money?"</h3>
                     <p class="text-gray-600 text-sm">No idea what you made this month. Too busy to calculate. Feels like a lot of work for... something?</p>
                 </div>
                 
                 <div class="pain-card bg-purple-50 border border-purple-100 rounded-2xl p-6 transition-transform">
-                    <div class="text-3xl mb-4">📝</div>
-                    <h3 class="font-semibold text-gray-900 mb-2">Notebooks & post-its</h3>
-                    <p class="text-gray-600 text-sm">Your "system" is a notebook, 3 apps, and hoping you don't lose that post-it note.</p>
+                    <h3 class="font-semibold text-gray-900 mb-2">The notebook "system"</h3>
+                    <p class="text-gray-600 text-sm">Your current setup: a notebook, 3 different apps, and hoping you don't lose that sticky note.</p>
                 </div>
             </div>
         </div>
@@ -196,7 +191,6 @@
                 Ordr lives in Telegram. Just tell it about orders like you'd tell a friend. It remembers everything, tracks payments, and reminds you what's coming up.
             </p>
             <div class="inline-flex items-center gap-2 bg-white/20 rounded-full px-6 py-3">
-                <span class="text-2xl">💬</span>
                 <span>Works right in Telegram — no new app to learn</span>
             </div>
         </div>
@@ -216,38 +210,62 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="p-6">
-                    <div class="feature-icon mb-4">📦</div>
-                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Natural Order Logging</h3>
+                    <div class="feature-icon mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Natural order logging</h3>
                     <p class="text-gray-600">Just type like you're texting a friend. "2 cakes for Jessica, Sat 3pm, $80 paid" — done.</p>
                 </div>
                 
                 <div class="p-6">
-                    <div class="feature-icon mb-4">💰</div>
-                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Payment Tracking</h3>
+                    <div class="feature-icon mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Payment tracking</h3>
                     <p class="text-gray-600">Know exactly who paid, who owes, and who gave a deposit. No more awkward "did you pay?" messages.</p>
                 </div>
                 
                 <div class="p-6">
-                    <div class="feature-icon mb-4">📅</div>
-                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Daily Schedule</h3>
+                    <div class="feature-icon mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Daily schedule</h3>
                     <p class="text-gray-600">Ask "what's tomorrow?" and get a clear list of pickups, deliveries, and payment status.</p>
                 </div>
                 
                 <div class="p-6">
-                    <div class="feature-icon mb-4">👑</div>
-                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Customer Memory</h3>
-                    <p class="text-gray-600">"@jessica is back! 5th order, total $340, likes less sweet." Your VIPs get VIP treatment.</p>
+                    <div class="feature-icon mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Customer memory</h3>
+                    <p class="text-gray-600">"@jessica is back! 5th order, total $340, prefers less sweet." Your regulars get recognized.</p>
                 </div>
                 
                 <div class="p-6">
-                    <div class="feature-icon mb-4">⏰</div>
-                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Smart Reminders</h3>
+                    <div class="feature-icon mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Smart reminders</h3>
                     <p class="text-gray-600">Morning briefing of today's orders. Evening reminder of unpaid orders. Never miss a thing.</p>
                 </div>
                 
                 <div class="p-6">
-                    <div class="feature-icon mb-4">📊</div>
-                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Simple Reports</h3>
+                    <div class="feature-icon mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Simple reports</h3>
                     <p class="text-gray-600">"How was this month?" — instant summary of orders, revenue, and your busiest days.</p>
                 </div>
             </div>
@@ -255,7 +273,7 @@
     </section>
 
     <!-- How It Works -->
-    <section id="demo" class="py-20 px-4 bg-gray-50">
+    <section id="how-it-works" class="py-20 px-4 bg-gray-50">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -270,12 +288,12 @@
                 <div class="text-center">
                     <div class="w-16 h-16 rounded-full gradient-bg text-white text-2xl font-bold flex items-center justify-center mx-auto mb-6">1</div>
                     <h3 class="font-semibold text-xl text-gray-900 mb-3">Connect your Telegram</h3>
-                    <p class="text-gray-600">We set up a private bot just for you. Takes 5 minutes, we help you through it.</p>
+                    <p class="text-gray-600">We set up a private bot just for you. Takes 5 minutes, and we help you through it.</p>
                 </div>
                 
                 <div class="text-center">
                     <div class="w-16 h-16 rounded-full gradient-bg text-white text-2xl font-bold flex items-center justify-center mx-auto mb-6">2</div>
-                    <h3 class="font-semibold text-xl text-gray-900 mb-3">Tell it about orders</h3>
+                    <h3 class="font-semibold text-xl text-gray-900 mb-3">Log your orders</h3>
                     <p class="text-gray-600">Forward customer messages or type orders naturally. The bot understands and confirms.</p>
                 </div>
                 
@@ -293,40 +311,40 @@
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                    Loved by home bakers
+                    What early users are saying
                 </h2>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white border border-gray-200 rounded-2xl p-6">
                     <div class="flex items-center gap-1 text-yellow-400 mb-4">★★★★★</div>
-                    <p class="text-gray-600 mb-4">"I used to spend 1 hour every night going through messages to figure out tomorrow's orders. Now I just ask the bot. Life changing!"</p>
+                    <p class="text-gray-600 mb-4">"I used to spend an hour every night going through messages to figure out tomorrow's orders. Now I just ask the bot. Life changing."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center">🧁</div>
+                        <div class="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center font-semibold text-pink-600">S</div>
                         <div>
                             <div class="font-semibold text-sm">Sarah T.</div>
-                            <div class="text-xs text-gray-500">Home baker, 2 years</div>
+                            <div class="text-xs text-gray-500">Home baker</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="bg-white border border-gray-200 rounded-2xl p-6">
                     <div class="flex items-center gap-1 text-yellow-400 mb-4">★★★★★</div>
-                    <p class="text-gray-600 mb-4">"Finally know exactly how much I made each month. Turns out I was underpricing everything! Ordr paid for itself 10x over."</p>
+                    <p class="text-gray-600 mb-4">"Finally know exactly how much I make each month. Turns out I was underpricing my delivery fee. Ordr paid for itself immediately."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center">🍪</div>
+                        <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center font-semibold text-orange-600">M</div>
                         <div>
                             <div class="font-semibold text-sm">Michelle L.</div>
-                            <div class="text-xs text-gray-500">Cookie business owner</div>
+                            <div class="text-xs text-gray-500">Cookie business</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="bg-white border border-gray-200 rounded-2xl p-6">
                     <div class="flex items-center gap-1 text-yellow-400 mb-4">★★★★★</div>
-                    <p class="text-gray-600 mb-4">"The payment tracking alone is worth it. No more checking PayNow 50 times. Bot tells me who paid and who hasn't. So simple."</p>
+                    <p class="text-gray-600 mb-4">"The payment tracking alone is worth it. No more checking PayNow repeatedly. Bot tells me exactly who paid and who hasn't."</p>
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">🥗</div>
+                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center font-semibold text-green-600">J</div>
                         <div>
                             <div class="font-semibold text-sm">Jessica K.</div>
                             <div class="text-xs text-gray-500">Meal prep service</div>
@@ -342,10 +360,10 @@
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                    Simple pricing, no surprises
+                    Simple, transparent pricing
                 </h2>
                 <p class="text-xl text-gray-600">
-                    Less than a delivery order. Cancel anytime.
+                    Start free, upgrade when you're ready
                 </p>
             </div>
             
@@ -373,7 +391,7 @@
                         </li>
                     </ul>
                     <a href="#cta" class="block w-full border border-gray-300 text-gray-700 py-3 rounded-full text-center font-medium hover:bg-gray-50 transition">
-                        Start Free Trial
+                        Start free trial
                     </a>
                 </div>
                 
@@ -396,7 +414,7 @@
                             <span class="text-green-500">✓</span> Everything in Starter
                         </li>
                         <li class="flex items-center gap-2 text-sm">
-                            <span class="text-green-500">✓</span> Customer history & VIPs
+                            <span class="text-green-500">✓</span> Customer history
                         </li>
                         <li class="flex items-center gap-2 text-sm">
                             <span class="text-green-500">✓</span> Smart reminders
@@ -406,7 +424,7 @@
                         </li>
                     </ul>
                     <a href="#cta" class="block w-full gradient-bg text-white py-3 rounded-full text-center font-medium hover:opacity-90 transition">
-                        Start Free Trial
+                        Start free trial
                     </a>
                 </div>
                 
@@ -436,7 +454,7 @@
                         </li>
                     </ul>
                     <a href="#cta" class="block w-full border border-gray-300 text-gray-700 py-3 rounded-full text-center font-medium hover:bg-gray-50 transition">
-                        Start Free Trial
+                        Start free trial
                     </a>
                 </div>
             </div>
@@ -448,34 +466,34 @@
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                    Questions? We got answers
+                    Frequently asked questions
                 </h2>
             </div>
             
             <div class="space-y-6">
                 <div class="border-b border-gray-200 pb-6">
                     <h3 class="font-semibold text-lg text-gray-900 mb-2">Do I need to be tech-savvy?</h3>
-                    <p class="text-gray-600">Not at all! If you can use Telegram, you can use Ordr. We help you set everything up in a 15-minute call.</p>
+                    <p class="text-gray-600">Not at all. If you can use Telegram, you can use Ordr. We help you set everything up in a 15-minute call.</p>
                 </div>
                 
                 <div class="border-b border-gray-200 pb-6">
                     <h3 class="font-semibold text-lg text-gray-900 mb-2">Is my data safe?</h3>
-                    <p class="text-gray-600">Yes! Your data is stored securely and never shared. Only you can access your orders and customer info.</p>
+                    <p class="text-gray-600">Yes. Your data is stored securely and never shared with third parties. Only you can access your orders and customer information.</p>
                 </div>
                 
                 <div class="border-b border-gray-200 pb-6">
                     <h3 class="font-semibold text-lg text-gray-900 mb-2">Can I try it first?</h3>
-                    <p class="text-gray-600">Absolutely! 14-day free trial, no credit card required. Cancel anytime if it's not for you.</p>
+                    <p class="text-gray-600">Absolutely. 14-day free trial, no credit card required. Cancel anytime if it's not for you.</p>
                 </div>
                 
                 <div class="border-b border-gray-200 pb-6">
                     <h3 class="font-semibold text-lg text-gray-900 mb-2">What if I have multiple staff taking orders?</h3>
-                    <p class="text-gray-600">Our Busy plan supports multiple users. Everyone can log orders to the same bot.</p>
+                    <p class="text-gray-600">Our Busy plan supports multiple users. Everyone can log orders to the same bot, and you'll see who logged what.</p>
                 </div>
                 
                 <div class="border-b border-gray-200 pb-6">
-                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Does it work with WhatsApp/Instagram?</h3>
-                    <p class="text-gray-600">You can forward orders from any platform to your Telegram bot. WhatsApp native integration coming soon!</p>
+                    <h3 class="font-semibold text-lg text-gray-900 mb-2">Does it work with WhatsApp or Instagram?</h3>
+                    <p class="text-gray-600">You can forward orders from any platform to your Telegram bot. WhatsApp native integration is coming soon.</p>
                 </div>
             </div>
         </div>
@@ -488,7 +506,7 @@
                 Ready to get organized?
             </h2>
             <p class="text-xl opacity-90 mb-8">
-                Join 500+ home bakers who never lose track of orders anymore.
+                Stop losing orders in your DMs. Start your free trial today.
             </p>
             <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
                 <input 
@@ -497,10 +515,10 @@
                     class="flex-1 px-6 py-4 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
                 >
                 <button class="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition whitespace-nowrap">
-                    Get Started →
+                    Get started
                 </button>
             </form>
-            <p class="text-sm opacity-75 mt-4">Free 14-day trial · No credit card · Cancel anytime</p>
+            <p class="text-sm opacity-75 mt-4">Free 14-day trial · No credit card required</p>
         </div>
     </section>
 
@@ -509,7 +527,9 @@
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex items-center gap-2">
-                    <span class="text-2xl">🧁</span>
+                    <div class="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">O</span>
+                    </div>
                     <span class="font-bold text-white">Ordr</span>
                 </div>
                 <div class="flex gap-8 text-sm">
@@ -518,7 +538,7 @@
                     <a href="#" class="hover:text-white">Contact</a>
                 </div>
                 <div class="text-sm">
-                    Made with 💜 in Singapore
+                    Made in Singapore
                 </div>
             </div>
         </div>
